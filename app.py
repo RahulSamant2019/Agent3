@@ -112,6 +112,7 @@ def power(a: float, b: float) -> float:
     """Raise a to the power b."""
     return a ** b
 
+
 @tool
 def factorial(n: int) -> int:
     fact = 1
@@ -119,12 +120,14 @@ def factorial(n: int) -> int:
         fact = fact * i
     return fact
 
+
 @tool
 def is_even(n: int) -> str:
     if n % 2 == 0:
         return "Even"
     else:
         return "Odd"
+
 
 @tool 
 def is_prime(n: int) -> Bool:
@@ -136,6 +139,7 @@ def is_prime(n: int) -> Bool:
             return False
 
     return True
+
 
 @tool
 def is_leap_year(year: int) -> Bool:
