@@ -113,21 +113,21 @@ def power(a: float, b: float) -> float:
     return a ** b
 
 @tool
-def factorial(n):
+def factorial(n: int) -> int:
     fact = 1
     for i in range(1, n + 1):
         fact = fact * i
     return fact
 
 @tool
-def is_even(n):
+def is_even(n: int) -> str:
     if n % 2 == 0:
         return "Even"
     else:
         return "Odd"
 
 @tool 
-def is_prime(n):
+def is_prime(n: int) -> Bool:
     if n < 2:
         return False
 
@@ -136,8 +136,9 @@ def is_prime(n):
             return False
 
     return True
+
 @tool
-def is_leap_year(year):
+def is_leap_year(year: int) -> Bool:
     if year % 400 == 0:
         return True
     elif year % 100 == 0:
