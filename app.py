@@ -73,7 +73,7 @@ with st.sidebar:
 	"is_even(a)",
 	"is_prime(a)",
 	"is_leap_year(a)",
-        language="text",
+        language="text"
     )
 
 
