@@ -68,12 +68,12 @@ with st.sidebar:
         "subtract(a, b)\n"
         "multiply(a, b)\n"
         "divide(a, b)\n"
-        "power(a, b)",
-	"factorial(a)",
-	"is_even(a)",
-	"is_prime(a)",
+        "power(a, b)\n"
+	"factorial(a)\n"
+	"is_even(a)\n"
+	"is_prime(a)\n"
 	"is_leap_year(a)",
-        language="text"
+        language="text",
     )
 
 
