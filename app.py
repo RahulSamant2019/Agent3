@@ -115,6 +115,7 @@ def power(a: float, b: float) -> float:
 
 @tool
 def factorial(n: int) -> int:
+    """Calculate the factorial of a non-negative integer n."""
     fact = 1
     for i in range(1, n + 1):
         fact = fact * i
@@ -123,6 +124,7 @@ def factorial(n: int) -> int:
 
 @tool
 def is_even(n: int) -> str:
+    """Check if an integer n is even or odd."""
     if n % 2 == 0:
         return "Even"
     else:
@@ -130,11 +132,12 @@ def is_even(n: int) -> str:
 
 
 @tool 
-def is_prime(n: int) -> Bool:
+def is_prime(n: int) -> bool:
+    """Determine whether an integer n is a prime number."""
     if n < 2:
         return False
 
-    for i in range(2, n):
+    for i in range(2, int(n ** 0.5) + 1):
         if n % i == 0:
             return False
 
@@ -142,7 +145,8 @@ def is_prime(n: int) -> Bool:
 
 
 @tool
-def is_leap_year(year: int) -> Bool:
+def is_leap_year(year: int) -> bool:
+    """Determine whether a given calendar year is a leap year."""
     if year % 400 == 0:
         return True
     elif year % 100 == 0:
@@ -151,7 +155,6 @@ def is_leap_year(year: int) -> Bool:
         return True
     else:
         return False
-
 
 
 
